@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-12">
+      <nb-card>
+          <nb-card-header>Data SKPD</nb-card-header>
+          <nb-card-body>
+              <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Program</th>
+                      <th scope="col">Anggaran</th>
+                      <th scope="col">Realisasi</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr *ngFor="let program of programs; let i = index">
+                          <td>{{i + 1}}</td>
+                          <td>{{program.keteranganProgram}}</td>
+                          <td>{{program.keteranganProgram}}</td>
+                          <td>{{program.keteranganProgram}}</td>
+                      </tr>
+                  </tbody>
+                </table>
+          </nb-card-body>
+        </nb-card>
+  </div>
+</div>

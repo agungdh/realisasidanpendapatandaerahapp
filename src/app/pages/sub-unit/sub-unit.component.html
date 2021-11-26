@@ -3,7 +3,7 @@
         <nb-card>
             <nb-card-header>Data SKPD</nb-card-header>
             <nb-card-body>
-                <table class="table">
+                <table class="table table-hover">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
@@ -13,8 +13,8 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <tr *ngFor="let subUnit of subUnits">
-                            <td>{{subUnit.namaSubUnit}}</td>
+                        <tr *ngFor="let subUnit of subUnits; let i = index" (click)="goToProgram(subUnit);">
+                            <td>{{i + 1}}</td>
                             <td>{{subUnit.namaSubUnit}}</td>
                             <td>{{subUnit.namaSubUnit}}</td>
                             <td>{{subUnit.namaSubUnit}}</td>

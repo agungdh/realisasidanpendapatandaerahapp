@@ -8,6 +8,7 @@ import { ECommerceModule } from './e-commerce/e-commerce.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
 import { SubUnitModule } from './sub-unit/sub-unit.module';
+import { ProgramModule } from './program/program.module';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { SubUnitModule } from './sub-unit/sub-unit.module';
     ECommerceModule,
     MiscellaneousModule,
     SubUnitModule,
+    ProgramModule,
   ],
   declarations: [
     PagesComponent,

@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
 import { SubUnitComponent } from './sub-unit/sub-unit.component';
+import { ProgramComponent } from './program/program.component';
 
 const routes: Routes = [{
   path: '',
@@ -14,6 +15,10 @@ const routes: Routes = [{
     {
       path: 'sub-unit',
       component: SubUnitComponent,
+    },
+    {
+      path: 'program/:kodeUrusan/:kodeBidang/:kodeUnit/:kodeSubUnit',
+      component: ProgramComponent,
     },
     {
       path: 'dashboard',
