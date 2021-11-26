@@ -1,1 +1,27 @@
-<p>hehe</p>
+<div class="row">
+    <div class="col-12">
+        <nb-card>
+            <nb-card-header>Data SKPD</nb-card-header>
+            <nb-card-body>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">SKPD</th>
+                        <th scope="col">Anggaran</th>
+                        <th scope="col">Realisasi</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let subUnit of subUnits">
+                            <td>{{subUnit.namaSubUnit}}</td>
+                            <td>{{subUnit.namaSubUnit}}</td>
+                            <td>{{subUnit.namaSubUnit}}</td>
+                            <td>{{subUnit.namaSubUnit}}</td>
+                        </tr>
+                    </tbody>
+                  </table>
+            </nb-card-body>
+          </nb-card>
+    </div>
+</div>

@@ -20,11 +20,6 @@ export class SubUnitComponent implements OnInit{
     this.subUnitService.getSubUnits().subscribe(
       (response: SubUnit[]) => {
         this.subUnits = response;
-        console.log(this.subUnits);
-      },
-      (error: HttpErrorResponse) => {
-        console.log(error);
-        alert(error.message);
       }
     );
   }
